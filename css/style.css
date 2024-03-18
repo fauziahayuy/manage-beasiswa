@@ -3696,7 +3696,10 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 }
 /* Dashboard - total kategori */
 
-/* Dashboar - table admin */
+/* Dashboard - table admin */
+.table-admin tfoot{
+  display: table-header-group;
+}
 .table-admin th{
   vertical-align: middle !important;
   color: white !important;
@@ -3707,7 +3710,7 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
   vertical-align: middle !important;
   font-size: 14px;
 }
-/* Dashboar - table admin */
+/* Dashboard - table admin */
 
 @media (max-width: 992px) {
   .btn-grup{
