@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+	font-family: 'Poppins', sans-serif;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+/* Navbar */
+.navbar-bg-1 {
+    background-color: #E5FAFF;
+  }
+  
+  .text-bkt{
+    color: #0091B2 !important;
+  }
+/* Navbar */
+
+/* Form Tuntas - PA */
+.card-form-tuntas label{
+    font-weight: bold !important;
+}
+
+.card-form-tuntas .txt-info{
+    color: red !important;
+}
+/* Form Tuntas - PA */
