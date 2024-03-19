@@ -3700,6 +3700,7 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 .table-admin tfoot{
   display: table-header-group;
 }
+
 .table-admin th{
   vertical-align: middle !important;
   color: white !important;
@@ -3711,6 +3712,12 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
   font-size: 14px;
 }
 /* Dashboard - table admin */
+
+/* Operator - table operator */
+.table-operator th,td{
+  font-size: 16px !important;
+}
+/* Operator - table operator */
 
 @media (max-width: 992px) {
   .btn-grup{
