@@ -30,3 +30,6 @@ $("[data-checkboxes]").each(function() {
 
 $("#table-1").dataTable();
 $("#table-2").dataTable();
+$("#table-3").dataTable();
+$("#table-4").dataTable();
+$("#table-5").dataTable();

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>MONEV &mdash; DISDIKBUD Prov. Kaltim </title>
+  <link rel="icon" href="img/logo/logo_disdik.png">
+
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="node_modules/jqvmap/dist/jqvmap.min.css">
+  <link rel="stylesheet" href="node_modules/weathericons/css/weather-icons.min.css">
+  <link rel="stylesheet" href="node_modules/weathericons/css/weather-icons-wind.min.css">
+  <link rel="stylesheet" href="node_modules/summernote/dist/summernote-bs4.css">
+  <link rel="stylesheet" href="node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="node_modules/datatables.net-select-bs4/css/select.bootstrap4.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+  <div id="app">
+    <div class="main-wrapper">
+      <div class="navbar-bg"></div>
+      <nav class="navbar navbar-expand-lg main-navbar">
+        <form class="form-inline mr-auto">
+          <ul class="navbar-nav mr-3">
+            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
+            <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
+          </ul>
+        </form>
+        <ul class="navbar-nav navbar-right">
+          <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+            <img alt="image" src="img/avatar/avatar-1.png" class="rounded-circle mr-1">
+            <div class="d-sm-none d-lg-inline-block">Hi, Fauziah</div></a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="dropdown-title">Logged in 5 min ago</div>
+              <a href="account_setting.html" class="dropdown-item has-icon">
+                <i class="far fa-user"></i> Pengaturan Akun
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item has-icon text-danger">
+                <i class="fas fa-sign-out-alt"></i> Logout
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-sidebar sidebar-style-2">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand">
+            <a href="index.html"><img src="img/logo/logo_disdik.png" alt="" width="35"> BKT Sekolah</a>
+          </div>
+          <div class="sidebar-brand sidebar-brand-sm">
+            <a href="index.html" class="navbar-brand mx-auto"><img src="img/logo/logo_disdik.png" alt="" width="35"></a>
+          </div>
+          <ul class="sidebar-menu">
+            <li class="menu-header">Dashboard</li>
+            <li><a class="nav-link" href="dashboard.html" style="font-size: 13px;"><i class="fas fa-gauge"></i> <span>Dashboard</span></a></li>
+            <li class="menu-header">Manajemen Web</li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link has-dropdown" style="font-size: 13px;"><i class="fas fa-folder-open"></i><span>Manajemen Website</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="https://beasiswa.kaltimprov.go.id" target="_blank">Tampilkan Web</a></li>
+                <li><a class="nav-link" href="kategori.html">Kategori</a></li>
+                <li><a class="nav-link" href="post.html">Post</a></li>
+                <li><a class="nav-link" href="faq.html">FAQs</a></li>
+                <li><a class="nav-link" href="announcement.html">Announcement</a></li>
+                <li><a class="nav-link" href="telegram.html">Notif Telegram</a></li>  
+                <li><a class="nav-link" href="video.html">Video</a></li>
+                <li><a class="nav-link" href="slider.html">Slider</a></li>
+                <li><a class="nav-link" href="headline.html">Headline</a></li>
+                <li><a class="nav-link" href="ditolak.html">MHS Alasan Ditolak</a></li>
+              </ul>
+            </li>
+            <li class="menu-header">Kategori Beasiswa</li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link has-dropdown" style="font-size: 13px;"><i class="fas fa-headset"></i><span>Operator</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="kab-kota.html">Dinas Kabupaten/Kota</a></li>
+                <li><a class="nav-link" href="satuan-pendidik.html">Satuan Pendidikan</a></li>
+                <li><a class="nav-link" href="peserta-didik.html">Peserta Didik</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link has-dropdown" style="font-size: 13px;"><i class="fas fa-users"></i><span>Pendaftar Tuntas Mahasiswa</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="pendaftar-tuntas.html">Semua Pendaftar</a></li>
+                <li><a class="nav-link" href="tuntas-kategori.html">Perkategori</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link has-dropdown" style="font-size: 13px;"><i class="fas fa-users"></i><span>Pendaftar Stimulan Mahasiswa</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="pendaftar-stimulan.html">Semua Pendaftar</a></li>
+                <li><a class="nav-link" href="stimulan-kategori.html">Perkategori</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link has-dropdown" style="font-size: 13px;"><i class="fas fa-users"></i><span>Pendaftar Stimulan Siswa</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="pendaftar-siswa.html">Semua Pendaftar</a></li>
+                <li><a class="nav-link" href="siswa-kategori.html">Perkategori</a></li>
+              </ul>
+            </li>
+            <li class="menu-header">Admin</li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link has-dropdown" style="font-size: 13px;"><i class="fas fa-search"></i><span>Pencarian ID</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="cari-mahasiswa.html">Mahasiswa</a></li>
+                <li><a class="nav-link" href="cari-siswa.html">Siswa/Santri</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link has-dropdown" style="font-size: 13px;"><i class="fas fa-folder-open"></i><span>Beasiswa Kaltim</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="semua-mhs.html">Mahasiswa</a></li>
+                <li><a class="nav-link" href="mhs-2022.html">Mahasiswa 2022</a></li>
+                <li><a class="nav-link" href="semua-siswa.html">Siswa/Santri</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link has-dropdown" style="font-size: 13px;"><i class="fas fa-folder-open"></i><span>MONEV</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="monev-2019.html">2019</a></li>
+                <li><a class="nav-link" href="monev-2020.html">2020</a></li>
+                <li><a class="nav-link" href="monev-2021.html">2021</a></li>
+                <li><a class="nav-link" href="monev-2022.html">2022</a></li>
+                <li><a class="nav-link" href="monev-2023.html">2023</a></li>
+              </ul>
+            </li>
+            <li><a class="nav-link" href="mhs-kerjasama.html" style="font-size: 13px;"><i class="fas fa-handshake"></i> <span>Kerjasama</span></a></li>
+            <li class="menu-header">Data Verifikasi</li>
+            <li><a class="nav-link" href="menunggu-verifikasi.html" style="font-size: 13px;"><i class="fas fa-pen-to-square"></i> <span>Menunggu Verifikasi</span></a></li>
+            <li><a class="nav-link" href="validasi.html" style="font-size: 13px;"><i class="fas fa-pen-to-square"></i> <span>Validasi</span></a></li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link has-dropdown" style="font-size: 13px;"><i class="fas fa-square-check"></i><span>Terverikasi</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="tuntas-terverikasi.html">Tuntas</a></li>
+                <li><a class="nav-link" href="stimulan-terverikasi.html">Stimulan Mahasiswa</a></li>
+                <li><a class="nav-link" href="siswa-terverikasi.html">Stimulan Siswa</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link has-dropdown" style="font-size: 13px;"><i class="fas fa-square-xmark"></i><span>Ditolak</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="tuntas-ditolak.html">Tuntas</a></li>
+                <li><a class="nav-link" href="stimulan-ditolak.html">Stimulan Mahasiswa</a></li>
+                <li><a class="nav-link" href="siswa-ditolak.html">Stimulan Siswa</a></li>
+              </ul>
+            </li>
+            <li class="menu-header">Lainnya</li>
+            <li><a class="nav-link" href="pengaduan.html" style="font-size: 13px;"><i class="fas fa-user-shield"></i> <span>Pengaduan</span></a></li>
+            <li class="mb-5"><a class="nav-link" href="berkas-siswa.html" style="font-size: 13px;"><i class="fas fa-folder-open"></i> <span>Berkas Siswa</span></a></li>
+            </ul>
+        </aside>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="section-header">
+            <h1>Detail Profile Mahasiswa</h1>
+          </div>
+
+          <div class="section-body">
+            <div class="card">
+              <div class="card-header bg-primary text-white align-items-center justify-content-between">
+                  <h5>Informasi Data Pendaftaran</h5>
+              </div>
+              <div class="card-body">
+                  <div class="row">
+                    <div class="col-md">
+                      <p style="margin-bottom: 0px;">ID PENDAFTARAN:</p>
+                      <p class="font-weight-bold">MT201910016</p>
+                    </div>
+                    <div class="col-md">
+                      <p style="margin-bottom: 0px;">Jenis Beasiswa:</p>
+                      <p class="font-weight-bold">TUNTAS</p>
+                    </div>
+                    <div class="col-md">
+                      <p style="margin-bottom: 0px;">Kategori Beasiswa:</p>
+                      <p class="font-weight-bold">UMUM</p>
+                    </div>
+                    <div class="col-md">
+                      <p style="margin-bottom: 0px;">Pilihan Beasiswa:</p>
+                      <p class="font-weight-bold">PRESTASI-AKADEMIK</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-header justify-content-center">
+                    <img src="img/avatar/pasfoto.jfif" alt="" width="150" class="rounded">
+                  </div>
+                  <div class="card-body">
+                    <ul class="nav nav-pills flex-column" id="myTab4" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="info-tab" data-toggle="tab" href="#informasi" role="tab" aria-controls="home" aria-selected="true">Informasi Pribadi</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="dokumen-tab" data-toggle="tab" href="#dokumen" role="tab" aria-controls="profile" aria-selected="false">Dokumen</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="kontak-tab" data-toggle="tab" href="#kontak-pribadi" role="tab" aria-controls="contact" aria-selected="false">Kontak Pribadi</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="wali-tab" data-toggle="tab" href="#wali" role="tab" aria-controls="wali" aria-selected="false">Orang Tua/Wali</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pendidikan-tab" data-toggle="tab" href="#pendidikan" role="tab" aria-controls="pendidikan" aria-selected="false">Pendidikan Tinggi</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="bank-tab" data-toggle="tab" href="#bank" role="tab" aria-controls="bank" aria-selected="false">Data Bank</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md"> 
+                <div class="tab-content no-padding" id="myTab2Content">
+                  <div class="tab-pane fade show active" id="informasi" role="tabpanel" aria-labelledby="info-tab">
+                    <div class="card">
+                      <div class="card-header">
+                        <h5>Informasi Pribadi</h5>
+                      </div>
+                      <div class="card-body">
+                        <table class="table table-striped text-dark table-responsive">
+                            <tbody>
+                                <tr>
+                                    <th width="35%">NAMA</th>
+                                    <td width="5%">:</td>
+                                    <td class="text-uppercase">NOVITA INDRAWATI</td>
+                                </tr>
+                                <tr>
+                                    <th>NIK</th>
+                                    <td>:</td>
+                                    <td>6474036111990006</td>
+                                </tr>
+                                <tr>
+                                    <th>NO. KK</th>
+                                    <td>:</td>
+                                    <td>6474031303070101</td>
+                                </tr>
+                                <tr>
+                                    <th>JENIS KELAMIN</th>
+                                    <td>:</td>
+                                    <td>Perempuan</td>
+                                </tr>
+                                <tr>
+                                    <th>TEMPAT LAHIR</th>
+                                    <td>:</td>
+                                    <td>Bontang</td>
+                                </tr>
+                                <tr>
+                                    <th>TANGGAL LAHIR</th>
+                                    <td>:</td>
+                                    <td>21 November 1999</td>
+                                </tr>
+                                <tr>
+                                    <th>AGAMA</th>
+                                    <td>:</td>
+                                    <td>Islam</td>
+                                </tr>
+                                <tr>
+                                    <th>PEKERJAAN</th>
+                                    <td>:</td>
+                                    <td>Mahasiswa</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="dokumen" role="tabpanel" aria-labelledby="dokumen-tab">
+                    <div class="card">
+                      <div class="card-header">
+                        <h5>Dokumen</h5>
+                      </div>
+                      <div class="card-body">
+                        <table class="table table-striped text-dark">
+                            <tbody>
+                                <tr>
+                                    <td colspan="3"><i class="fas fa-check"></i> <a class="font-weight-bold" href="img/avatar/avatar-1.png" data-fancybox="gallery"> 1. Kartu Tanda Penduduk</a></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><i class="fas fa-check"></i> <a class="font-weight-bold" href="img/avatar/avatar-1.png" data-fancybox="gallery"> 2. Kartu Keluarga</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    
+
+
+                  </div>
+                  <div class="tab-pane fade" id="kontak-pribadi" role="tabpanel" aria-labelledby="kontak-tab">
+                    <div class="card">
+                      <div class="card-header">
+                        <h5>Kontak Pribadi</h5>
+                      </div>
+                      <div class="card-body">
+                        <table class="table table-striped text-dark table-responsive">
+                            <tbody>
+                                <tr>
+                                    <th width="35%">KABUPATEN/KOTA</th>
+                                    <td width="5%">:</td>
+                                    <td>Kota Bontang</td>
+                                </tr>
+                                <tr>
+                                    <th>KECAMATAN</th>
+                                    <td>:</td>
+                                    <td>Bontang Barat</td>
+                                </tr>
+                                <tr>
+                                    <th>KELURAHAN/DESA</th>
+                                    <td>:</td>
+                                    <td>Belimbing</td>
+                                </tr>
+                                <tr>
+                                    <th>ALAMAT LENGKAP</th>
+                                    <td>:</td>
+                                    <td>Jl. Cipto mangunkusumo RT 42 No 01 Bontang Barat</td>
+                                </tr>
+                                <tr>
+                                    <th>KODE POS</th>
+                                    <td>:</td>
+                                    <td>75313</td>
+                                </tr>
+                                <tr>
+                                    <th>NO. HANDPHONE</th>
+                                    <td>:</td>
+                                    <td>081255559642</td>
+                                </tr>
+                                <tr>
+                                    <th>EMAIL</th>
+                                    <td>:</td>
+                                    <td>Novitaindrawati021@gmail.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="wali" role="tabpanel" aria-labelledby="wali-tab">
+                    <div class="card">
+                      <div class="card-header">
+                        <h5>Orang Tua/Wali</h5>
+                      </div>
+                      <div class="card-body">
+                        <table class="table table-striped text-dark table-responsive">
+                            <tbody>
+                                <tr>
+                                    <th width="35%">ORANG TUA/WALI</th>
+                                    <td width="5%">:</td>
+                                    <td>Warniti Lydiawati</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pendidikan" role="tabpanel" aria-labelledby="pendidikan-tab">
+                    <div class="card">
+                      <div class="card-header">
+                        <h5>Pendidikan Tinggi</h5>
+                      </div>
+                      <div class="card-body">
+                        <table class="table table-striped text-dark table-responsive">
+                            <tbody>
+                                <tr>
+                                    <th width="35%">NIM</th>
+                                    <td width="5%">:</td>
+                                    <td>1805125042</td>
+                                </tr>
+                                <tr>
+                                    <th>JENJANG</th>
+                                    <td>:</td>
+                                    <td>S1</td>
+                                </tr>
+                                <tr>
+                                    <th>SEMESTER</th>
+                                    <td>:</td>
+                                    <td>Semester X</td>
+                                </tr>
+                                <tr>
+                                    <th>PERGURUAN TINGGI</th>
+                                    <td>:</td>
+                                    <td>Universitas Mulawarman</td>
+                                </tr>
+                                <tr>
+                                    <th>AKREDITASI PT</th>
+                                    <td>:</td>
+                                    <td>B</td>
+                                </tr>
+                                <tr>
+                                    <th>PROGRAM STUDI</th>
+                                    <td>:</td>
+                                    <td>Pendidikan Guru Pendidikan Anak Usia Dini</td>
+                                </tr>
+                                <tr>
+                                    <th>AKREDITASI PRODI</th>
+                                    <td>:</td>
+                                    <td>B</td>
+                                </tr>
+                                <tr>
+                                    <th>UKT/SPP</th>
+                                    <td>:</td>
+                                    <td>Rp 1.500.000</td>
+                                </tr>
+                                <tr>
+                                    <th>IPK</th>
+                                    <td>:</td>
+                                    <td>3.66</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="bank" role="tabpanel" aria-labelledby="bank-tab">
+                    <div class="card">
+                      <div class="card-header">
+                        <h5>Data Bank</h5>
+                      </div>
+                      <div class="card-body">
+                        <table class="table table-striped text-dark table-responsive">
+                            <tbody>
+                                <tr>
+                                    <th width="35%">NAMA BANK</th>
+                                    <td width="5%">:</td>
+                                    <td>KALTIMTARA</td>
+                                </tr>
+                                <tr>
+                                    <th>NAMA PEMILIK REKENING</th>
+                                    <td>:</td>
+                                    <td>Novita Indrawati</td>
+                                </tr>
+                                <tr>
+                                    <th>NO. REKENING</th>
+                                    <td>:</td>
+                                    <td>0087524396</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="main-footer">
+        <div class="footer-left">
+          Copyright &copy; 2024 <div class="bullet"></div> Dinas Pendidikan dan Kebudayaan Provinsi Kalimantan Timur
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- General JS Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/stisla.js"></script>
+  <script src="https://kit.fontawesome.com/39f6e58ccc.js" crossorigin="anonymous"></script>
+
+  <!-- JS Libraies -->
+  <script src="node_modules/simpleweather/jquery.simpleWeather.min.js"></script>
+  <script src="node_modules/chart.js/dist/Chart.min.js"></script>
+  <script src="node_modules/jqvmap/dist/jquery.vmap.min.js"></script>
+  <script src="node_modules/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+  <script src="node_modules/summernote/dist/summernote-bs4.js"></script>
+  <script src="node_modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
+  <script src="https://kit.fontawesome.com/39f6e58ccc.js" crossorigin="anonymous"></script>
+  <script src="node_modules/datatables/media/js/jquery.dataTables.min.js"></script>
+  <script src="node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+  <script src="node_modules/datatables.net-select-bs4/js/select.bootstrap4.min.js"></script>
+
+  <!-- Template JS File -->
+  <script src="js/scripts.js"></script>
+  <script src="js/custom.js"></script>
+
+  <!-- Page Specific JS File -->
+  <script src="js/page/modules-datatables.js"></script>
+</body>
+</html>

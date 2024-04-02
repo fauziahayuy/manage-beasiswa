@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>Dashboard &mdash; DISDIKBUD Prov. Kaltim </title>
+  <title>MONEV &mdash; DISDIKBUD Prov. Kaltim </title>
   <link rel="icon" href="img/logo/logo_disdik.png">
 
   <!-- General CSS Files -->
@@ -17,13 +17,14 @@
   <link rel="stylesheet" href="node_modules/summernote/dist/summernote-bs4.css">
   <link rel="stylesheet" href="node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
   <link rel="stylesheet" href="node_modules/datatables.net-select-bs4/css/select.bootstrap4.min.css">
+  <link rel="stylesheet" href="node_modules/prismjs/themes/prism.css">
 
   <!-- Template CSS -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/components.css">
 </head>
 
-<body>
+<body class="sidebar-mini">
   <div id="app">
     <div class="main-wrapper">
       <div class="navbar-bg"></div>
@@ -61,7 +62,7 @@
           </div>
           <ul class="sidebar-menu">
             <li class="menu-header">Dashboard</li>
-            <li class="active"><a class="nav-link" href="dashboard.html" style="font-size: 13px;"><i class="fas fa-gauge"></i> <span>Dashboard</span></a></li>
+            <li><a class="nav-link" href="dashboard.html" style="font-size: 13px;"><i class="fas fa-gauge"></i> <span>Dashboard</span></a></li>
             <li class="menu-header">Manajemen Web</li>
             <li class="nav-item dropdown">
               <a href="#" class="nav-link has-dropdown" style="font-size: 13px;"><i class="fas fa-folder-open"></i><span>Manajemen Website</span></a>
@@ -127,7 +128,7 @@
             <li class="nav-item dropdown">
               <a href="#" class="nav-link has-dropdown" style="font-size: 13px;"><i class="fas fa-folder-open"></i><span>MONEV</span></a>
               <ul class="dropdown-menu">
-                <li><a class="nav-link" href="monev-2019.html">2019</a></li>
+                <li class="active"><a class="nav-link" href="monev-2019.html">2019</a></li>
                 <li><a class="nav-link" href="monev-2020.html">2020</a></li>
                 <li><a class="nav-link" href="monev-2021.html">2021</a></li>
                 <li><a class="nav-link" href="monev-2022.html">2022</a></li>
@@ -171,17 +172,17 @@
           <div class="section-body">
             <div class="row mb-4">
                 <div class="col-md">
-                    <a href="#" class="btn btn-icon icon-left btn-danger mb-2"><i class="fas fa-setting"></i> TUTUP | 2023 - 12 - 17 | 13:50:23</a>
+                    <a href="#" class="btn btn-icon icon-left btn-danger mb-2" data-toggle="modal" data-target="#open-monev"><i class="fas fa-gear"></i> TUTUP | 2023 - 12 - 17 | 13:50:23</a>
                 </div>
                 <div class="col-md d-sm-flex align-items-center justify-content-end">
-                    <a href="#" class="btn btn-icon icon-left btn-info mb-2 mr-2"><i class="fas fa-user-secret"></i> Verifikator</a>
+                    <a href="#" class="btn btn-icon icon-left btn-info mb-2 mr-2" data-toggle="modal" data-target="#verifikator"><i class="fas fa-user-secret"></i> Verifikator</a>
                     <a href="#" class="btn btn-icon icon-left btn-primary mb-2 mr-2"><i class="fas fa-table"></i> Sudah Lulus</a>
                     <a href="#" class="btn btn-icon icon-left btn-success mb-2"><i class="fas fa-file-excel"></i> Download Data</a>
                 </div>
             </div>
             <hr>
             <div class="row total_kategori">
-              <div class="col-md">
+              <div class="col-xl-3 col-md-6">
                 <div class="card card-primary">
                   <div class="card-body">
                     <div class="row">
@@ -196,7 +197,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md">
+              <div class="col-xl-3 col-md-6">
                 <div class="card card-success">
                   <div class="card-body">
                     <div class="row">
@@ -211,7 +212,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md">
+              <div class="col-xl-3 col-md-6">
                 <div class="card card-warning">
                   <div class="card-body">
                     <div class="row">
@@ -226,7 +227,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md">
+              <div class="col-xl-3 col-md-6">
                 <div class="card card-danger">
                   <div class="card-body">
                     <div class="row">
@@ -241,14 +242,12 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="row total_kategori">
-              <div class="col-md">
-                <div class="card card-primary">
+              <div class="col-xl-3 col-md-6">
+                <div class="card card-danger">
                   <div class="card-body">
                     <div class="row">
                       <div class="col">
-                        <p class="font-weight-bold text-primary">DISABILITAS</p>
+                        <p class="font-weight-bold text-danger">DISABILITAS</p>
                         <h6>2</h6>
                       </div>
                       <div class="col-auto align-self-center">
@@ -258,12 +257,12 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md">
-                <div class="card card-success">
+              <div class="col-xl-3 col-md-6">
+                <div class="card card-danger">
                   <div class="card-body">
                     <div class="row">
                       <div class="col">
-                        <p class="font-weight-bold text-success">DAERAH 3T</p>
+                        <p class="font-weight-bold text-danger">DAERAH 3T</p>
                         <h6>8</h6>
                       </div>
                       <div class="col-auto align-self-center">
@@ -273,12 +272,12 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md">
-                <div class="card card-warning">
+              <div class="col-xl-3 col-md-6">
+                <div class="card card-danger">
                   <div class="card-body">
                     <div class="row">
                       <div class="col">
-                        <p class="font-weight-bold text-warning">ANAK/CUCU VETERAN</p>
+                        <p class="font-weight-bold text-danger">ANAK/CUCU VETERAN</p>
                         <h6>22</h6>
                       </div>
                       <div class="col-auto align-self-center">
@@ -288,7 +287,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md">
+              <div class="col-xl-3 col-md-6">
                 <div class="card card-danger">
                   <div class="card-body">
                     <div class="row">
@@ -303,92 +302,527 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <hr>
-            <div class="card">
-              <div class="card-header">
-                <h5 class="text-primary">Daftar Admin</h5>
+              <div class="col-xl-3 col-md-6">
+                <div class="card card-success">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col">
+                        <p class="font-weight-bold text-success">SUDAH LULUS/TUNTAS</p>
+                        <h6>771</h6>
+                      </div>
+                      <div class="col-auto align-self-center">
+                        <p><i class="fas fa-2x fa-chart-area"></i></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="card-body">
-                <div class="table-responsive">
-                  <table class="table table-striped table-bordered table-admin" id="table-2">
-                    <thead>
-                      <tr class="bg-primary">
-                        <th scope="col">Nama</th>
-                        <th scope="col">Verifikasi Tuntas</th>
-                        <th scope="col">Tolak Tuntas</th>
-                        <th scope="col">Verifikasi Stimulan MHS</th>
-                        <th scope="col">Tolak Stimulan MHS</th>
-                        <th scope="col">Verifikasi Stimulan Siswa</th>
-                        <th scope="col">Tolak Stimulan MHS</th>
-                        <th scope="col">Total</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Faisal Erlangga Sanora</td>
-                        <td>1407</td>
-                        <td>317</td>
-                        <td>3355</td>
-                        <td>362</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>5441</td>
-                      </tr>
-                      <tr>
-                        <td>Hermanto</td>
-                        <td>941</td>
-                        <td>241</td>
-                        <td>2680</td>
-                        <td>341</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>4203</td>
-                      </tr>
-                    </tbody>
-                  </table>
+              <div class="col-xl-3 col-md-6">
+                <div class="card card-success">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col">
+                        <p class="font-weight-bold text-success">SUDAH TUNTAS (TAPI MELAPOR)</p>
+                        <h6>154</h6>
+                      </div>
+                      <div class="col-auto align-self-center">
+                        <p><i class="fas fa-2x fa-chart-area"></i></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6">
+                <div class="card card-danger">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col">
+                        <p class="font-weight-bold text-danger">YANG WAJIB MELAPOR</p>
+                        <h6>2453</h6>
+                      </div>
+                      <div class="col-auto align-self-center">
+                        <p><i class="fas fa-2x fa-chart-area"></i></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6">
+                <div class="card card-warning">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col">
+                        <p class="font-weight-bold text-warning">YANG SUDAH MELAPOR</p>
+                        <h6>3743 (152,29%)</h6>
+                      </div>
+                      <div class="col-auto align-self-center">
+                        <p><i class="fas fa-2x fa-chart-area"></i></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6">
+                <div class="card card-warning">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col">
+                        <p class="font-weight-bold text-warning">YANG BELUM MELAPOR</p>
+                        <h6>-1290 (-52,59%)</h6>
+                      </div>
+                      <div class="col-auto align-self-center">
+                        <p><i class="fas fa-2x fa-chart-area"></i></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6">
+                <div class="card card-warning">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col">
+                        <p class="font-weight-bold text-warning">MENUNGGU VERIFIKASI</p>
+                        <h6>0</h6>
+                      </div>
+                      <div class="col-auto align-self-center">
+                        <p><i class="fas fa-2x fa-chart-area"></i></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6">
+                <div class="card card-warning">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col">
+                        <p class="font-weight-bold text-warning">MENUNGGU VERIFIKASI DENGAN KETERANGAN</p>
+                        <h6>0</h6>
+                      </div>
+                      <div class="col-auto align-self-center">
+                        <p><i class="fas fa-2x fa-chart-area"></i></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6">
+                <div class="card card-danger">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col">
+                        <p class="font-weight-bold text-danger">DITOLAK/PERLU DISEMPURNAKAN</p>
+                        <h6>256</h6>
+                      </div>
+                      <div class="col-auto align-self-center">
+                        <p><i class="fas fa-2x fa-chart-area"></i></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6">
+                <div class="card card-success">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col">
+                        <p class="font-weight-bold text-success">DITERIMA</p>
+                        <h6>3613</h6>
+                      </div>
+                      <div class="col-auto align-self-center">
+                        <p><i class="fas fa-2x fa-chart-area"></i></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6">
+                <div class="card card-success">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col">
+                        <p class="font-weight-bold text-success">MENYUSUL</p>
+                        <h6>28</h6>
+                      </div>
+                      <div class="col-auto align-self-center">
+                        <p><i class="fas fa-2x fa-chart-area"></i></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6">
+                <div class="card card-success">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col">
+                        <p class="font-weight-bold text-success">TOTAL DIVERIKASI</p>
+                        <h6>3897</h6>
+                      </div>
+                      <div class="col-auto align-self-center">
+                        <p><i class="fas fa-2x fa-chart-area"></i></p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+
+            <hr>
+            <!-- SEMUA DATA -->
             <div class="card">
-              <div class="card-header">
-                <h5 class="text-success">Daftar Admin</h5>
+              <div class="card-header bg-info">
+                <h5 class="text-light">SEMUA DATA</h5>
               </div>
               <div class="card-body">
                 <div class="table-responsive">
                   <table class="table table-striped table-bordered table-admin" id="table-1">
+                    <tfoot>
+                      <tr class="bg-info">
+                          <th><input type="text" class="form-control" placeholder="REFID"></th>
+                          <th><input type="text" class="form-control" placeholder="Nama"></th>
+                          <th><input type="text" class="form-control" placeholder="Email"></th>
+                          <th><input type="text" class="form-control" placeholder="No HP"></th>
+                          <th><input type="text" class="form-control" placeholder="NIK"></th>
+                          <th><input type="text" class="form-control" placeholder="Pilihan Beasiswa"></th>
+                          <th></th>
+                      </tr>
+                    </tfoot>
                     <thead>
-                      <tr class="bg-success">
-                        <th scope="col">Nama</th>
-                        <th scope="col">Validasi Tuntas</th>
-                        <th scope="col">Validasi Stimulan MHS</th>
-                        <th scope="col">Validasi Stimulan Siswa</th>
-                        <th scope="col">Total</th>
+                      <tr class="bg-info">
+                        <th scope="col">REFID</th>
+                          <th scope="col">NAMA</th>
+                          <th scope="col">EMAIL</th>
+                          <th scope="col">NO HP</th>
+                          <th scope="col">NIK</th>
+                          <th scope="col">PILIHAN BEASISWA</th>
+                          <th scope="col">AKSI</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>Suwarno</td>
-                        <td>1407</td>
-                        <td>3355</td>
-                        <td>0</td>
-                        <td>5441</td>
+                        <td>MT2023000002</td>
+                          <td>DEVITA TRI AMBARWATI</td>
+                          <td>devitapeppy@gmail.com</td>
+                          <td>082237318296</td>
+                          <td>6472106304030001</td>
+                          <td>PRESTASI-AKADEMIK</td>
+                          <td><a href="lihat-detail-monev.html" class="btn btn-icon btn-success"><i class="fas fa-eye"></i></a></td>
                       </tr>
                       <tr>
-                        <td>Fauziah Ayu Yulianti</td>
-                        <td>941</td>
-                        <td>2680</td>
-                        <td>0</td>
-                        <td>4203</td>
+                        <td>MT2023000002</td>
+                          <td>DEVITA TRI AMBARWATI</td>
+                          <td>devitapeppy@gmail.com</td>
+                          <td>082237318296</td>
+                          <td>6472106304030001</td>
+                          <td>PRESTASI-AKADEMIK</td>
+                          <td><a href="lihat-detail-monev.html" class="btn btn-icon btn-success"><i class="fas fa-eye"></i></a></td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
               </div>
-            </div>      
+            </div>
+            <!-- SEMUA DATA -->
+
+            <!-- YANG MELAPOR/MENUNGGU KONFIRMASI -->
+            <div class="card">
+              <div class="card-header bg-primary">
+                <h5 class="text-light">YANG MELAPOR/MENUNGGU KONFIRMASI</h5>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-striped table-bordered table-admin" id="table-2">
+                    <tfoot>
+                      <tr class="bg-primary">
+                          <th><input type="text" class="form-control" placeholder="REFID"></th>
+                          <th><input type="text" class="form-control" placeholder="Nama"></th>
+                          <th><input type="text" class="form-control" placeholder="Email"></th>
+                          <th><input type="text" class="form-control" placeholder="No HP"></th>
+                          <th><input type="text" class="form-control" placeholder="NIK"></th>
+                          <th><input type="text" class="form-control" placeholder="Pilihan Beasiswa"></th>
+                          <th></th>
+                      </tr>
+                    </tfoot>
+                    <thead>
+                      <tr class="bg-primary">
+                        <th scope="col">REFID</th>
+                          <th scope="col">NAMA</th>
+                          <th scope="col">EMAIL</th>
+                          <th scope="col">NO HP</th>
+                          <th scope="col">NIK</th>
+                          <th scope="col">PILIHAN BEASISWA</th>
+                          <th scope="col">AKSI</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>MT2023000002</td>
+                          <td>DEVITA TRI AMBARWATI</td>
+                          <td>devitapeppy@gmail.com</td>
+                          <td>082237318296</td>
+                          <td>6472106304030001</td>
+                          <td>PRESTASI-AKADEMIK</td>
+                          <td><a href="lihat-detail-monev.html" class="btn btn-icon btn-success"><i class="fas fa-eye"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>MT2023000002</td>
+                          <td>DEVITA TRI AMBARWATI</td>
+                          <td>devitapeppy@gmail.com</td>
+                          <td>082237318296</td>
+                          <td>6472106304030001</td>
+                          <td>PRESTASI-AKADEMIK</td>
+                          <td><a href="lihat-detail-monev.html" class="btn btn-icon btn-success"><i class="fas fa-eye"></i></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>   
+            <!-- YANG MELAPOR/MENUNGGU KONFIRMASI -->
+
+            <!-- DITOLAK/PERLU DISEMPURNAKAN -->
+            <div class="card">
+              <div class="card-header bg-danger">
+                <h5 class="text-light">DITOLAK/PERLU DISEMPURNAKAN</h5>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-striped table-bordered table-admin" id="table-3">
+                    <tfoot>
+                      <tr class="bg-danger">
+                          <th><input type="text" class="form-control" placeholder="REFID"></th>
+                          <th><input type="text" class="form-control" placeholder="Nama"></th>
+                          <th><input type="text" class="form-control" placeholder="Email"></th>
+                          <th><input type="text" class="form-control" placeholder="No HP"></th>
+                          <th><input type="text" class="form-control" placeholder="NIK"></th>
+                          <th><input type="text" class="form-control" placeholder="Pilihan Beasiswa"></th>
+                          <th></th>
+                      </tr>
+                    </tfoot>
+                    <thead>
+                      <tr class="bg-danger">
+                        <th scope="col">REFID</th>
+                          <th scope="col">NAMA</th>
+                          <th scope="col">EMAIL</th>
+                          <th scope="col">NO HP</th>
+                          <th scope="col">NIK</th>
+                          <th scope="col">PILIHAN BEASISWA</th>
+                          <th scope="col">AKSI</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>MT2023000002</td>
+                          <td>DEVITA TRI AMBARWATI</td>
+                          <td>devitapeppy@gmail.com</td>
+                          <td>082237318296</td>
+                          <td>6472106304030001</td>
+                          <td>PRESTASI-AKADEMIK</td>
+                          <td><a href="lihat-detail-monev.html" class="btn btn-icon btn-success"><i class="fas fa-eye"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>MT2023000002</td>
+                          <td>DEVITA TRI AMBARWATI</td>
+                          <td>devitapeppy@gmail.com</td>
+                          <td>082237318296</td>
+                          <td>6472106304030001</td>
+                          <td>PRESTASI-AKADEMIK</td>
+                          <td><a href="lihat-detail-monev.html" class="btn btn-icon btn-success"><i class="fas fa-eye"></i></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>   
+            <!-- DITOLAK/PERLU DISEMPURNAKAN -->
+
+            <!-- DISUSULKAN -->
+            <div class="card">
+              <div class="card-header bg-warning">
+                <h5 class="text-light">DISUSULKAN</h5>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-striped table-bordered table-admin" id="table-4">
+                    <tfoot>
+                      <tr class="bg-warning">
+                          <th><input type="text" class="form-control" placeholder="REFID"></th>
+                          <th><input type="text" class="form-control" placeholder="Nama"></th>
+                          <th><input type="text" class="form-control" placeholder="Email"></th>
+                          <th><input type="text" class="form-control" placeholder="No HP"></th>
+                          <th><input type="text" class="form-control" placeholder="NIK"></th>
+                          <th><input type="text" class="form-control" placeholder="Pilihan Beasiswa"></th>
+                          <th></th>
+                      </tr>
+                    </tfoot>
+                    <thead>
+                      <tr class="bg-warning">
+                        <th scope="col">REFID</th>
+                          <th scope="col">NAMA</th>
+                          <th scope="col">EMAIL</th>
+                          <th scope="col">NO HP</th>
+                          <th scope="col">NIK</th>
+                          <th scope="col">PILIHAN BEASISWA</th>
+                          <th scope="col">AKSI</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>MT2023000002</td>
+                          <td>DEVITA TRI AMBARWATI</td>
+                          <td>devitapeppy@gmail.com</td>
+                          <td>082237318296</td>
+                          <td>6472106304030001</td>
+                          <td>PRESTASI-AKADEMIK</td>
+                          <td><a href="lihat-detail-monev.html" class="btn btn-icon btn-success"><i class="fas fa-eye"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>MT2023000002</td>
+                          <td>DEVITA TRI AMBARWATI</td>
+                          <td>devitapeppy@gmail.com</td>
+                          <td>082237318296</td>
+                          <td>6472106304030001</td>
+                          <td>PRESTASI-AKADEMIK</td>
+                          <td><a href="lihat-detail-monev.html" class="btn btn-icon btn-success"><i class="fas fa-eye"></i></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>   
+            <!-- DISUSULKAN -->
+
+            <!-- DITERIMA -->
+            <div class="card">
+              <div class="card-header bg-success">
+                <h5 class="text-light">DITERIMA</h5>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-striped table-bordered table-admin" id="table-5">
+                    <tfoot>
+                      <tr class="bg-success">
+                          <th><input type="text" class="form-control" placeholder="REFID"></th>
+                          <th><input type="text" class="form-control" placeholder="Nama"></th>
+                          <th><input type="text" class="form-control" placeholder="Email"></th>
+                          <th><input type="text" class="form-control" placeholder="No HP"></th>
+                          <th><input type="text" class="form-control" placeholder="NIK"></th>
+                          <th><input type="text" class="form-control" placeholder="Pilihan Beasiswa"></th>
+                          <th></th>
+                      </tr>
+                    </tfoot>
+                    <thead>
+                      <tr class="bg-success">
+                        <th scope="col">REFID</th>
+                          <th scope="col">NAMA</th>
+                          <th scope="col">EMAIL</th>
+                          <th scope="col">NO HP</th>
+                          <th scope="col">NIK</th>
+                          <th scope="col">PILIHAN BEASISWA</th>
+                          <th scope="col">AKSI</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>MT2023000002</td>
+                          <td>DEVITA TRI AMBARWATI</td>
+                          <td>devitapeppy@gmail.com</td>
+                          <td>082237318296</td>
+                          <td>6472106304030001</td>
+                          <td>PRESTASI-AKADEMIK</td>
+                          <td><a href="lihat-detail-monev.html" class="btn btn-icon btn-success"><i class="fas fa-eye"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>MT2023000002</td>
+                          <td>DEVITA TRI AMBARWATI</td>
+                          <td>devitapeppy@gmail.com</td>
+                          <td>082237318296</td>
+                          <td>6472106304030001</td>
+                          <td>PRESTASI-AKADEMIK</td>
+                          <td><a href="lihat-detail-monev.html" class="btn btn-icon btn-success"><i class="fas fa-eye"></i></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>   
+            <!-- DITERIMA -->
+            
           </div>
         </section>
       </div>
+
+      <div class="modal fade" tabindex="-1" role="dialog" id="verifikator">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-info">VERIFIKATOR MONEV</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="card">
+                <div class="card-body">
+                  <table class="table table-responsive table-borderless">
+                    <thead>
+                      <tr>
+                        <th scope="col">NAMA</th>
+                          <th scope="col">MENERIMA</th>
+                          <th scope="col">MENOLAK</th>
+                          <th scope="col">MENYUSULKAN</th>
+                          <th scope="col">TOTAL</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Novita Rahma</th>
+                        <td>1105</td>
+                        <td>7</td>
+                        <td>6</td>
+                        <td>1118</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Mulyani</th>
+                        <td>64 </td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>5</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" tabindex="-1" role="dialog" id="open-monev">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h3 class="mb-4 text-center">Ingin Membuka Jadwal Monev</h3>
+              <div class="row">
+                <div class="col-md d-flex justify-content-center">
+                  <a href="#" class="btn btn-lg btn-danger px-4 py-3" style="font-size: 20px;">BUKA</a>
+                </div>
+                <div class="col-md d-flex justify-content-center">
+                  <a href="#" class="btn btn-lg btn-secondary px-4 py-3" style="font-size: 20px;">BATAL</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
       <footer class="main-footer">
         <div class="footer-left">
           Copyright &copy; 2024 <div class="bullet"></div> Dinas Pendidikan dan Kebudayaan Provinsi Kalimantan Timur
@@ -424,5 +858,6 @@
 
   <!-- Page Specific JS File -->
   <script src="js/page/modules-datatables.js"></script>
+  <script src="js/page/bootstrap-modal.js"></script>
 </body>
 </html>
